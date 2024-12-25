@@ -1,10 +1,10 @@
 <?php
 
-namespace Ichtrojan\Otp;
+namespace asher\Otp;
 
 use Carbon\Carbon;
 use Exception;
-use Ichtrojan\Otp\Models\Otp as Model;
+use asher\Otp\Models\Otp as Model;
 
 class Otp
 {
@@ -16,7 +16,7 @@ class Otp
      * @return mixed
      * @throws Exception
      */
-    public function generate(string $identifier, string $type, int $length = 4, int $validity = 10) : object
+    public function generate(string $identifier, string $type, int $length = 4, int $validity = 10): object
     {
         Model::where('identifier', $identifier)->where('valid', true)->delete();
 
@@ -34,7 +34,8 @@ class Otp
         Model::create([
             'identifier' => $identifier,
             'token' => $token,
-            'validity' => $validity
+            'validity' => $validity,
+            'valid' => true
         ]);
 
         return (object)[

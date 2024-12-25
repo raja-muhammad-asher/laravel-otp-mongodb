@@ -1,6 +1,6 @@
 <?php
 
-namespace Ichtrojan\Otp;
+namespace asher\Otp;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -11,9 +11,7 @@ class OtpServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
-    }
+    public function register() {}
 
     /**
      * Bootstrap any application services.
@@ -23,9 +21,9 @@ class OtpServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
-        
-         $this->commands([
-            \Ichtrojan\Otp\Commands\CleanOtps::class,
+
+        $this->commands([
+            \asher\Otp\Commands\CleanOtps::class,
         ]);
     }
 }

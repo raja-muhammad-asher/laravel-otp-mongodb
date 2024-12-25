@@ -1,8 +1,8 @@
 <?php
 
-namespace Ichtrojan\Otp\Models;
+namespace asher\Otp\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use MongoDB\Laravel\Eloquent\Model;
 
 class Otp extends Model
 {
@@ -19,6 +19,9 @@ class Otp extends Model
      * @var array
      */
     protected $fillable = [
-        'identifier', 'token', 'valid', 'validity'
+        'identifier',
+        'token',
+        'valid',
+        'validity'
     ];
 }

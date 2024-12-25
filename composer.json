@@ -1,29 +1,29 @@
 {
-    "name": "ichtrojan/laravel-otp",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Michael Okoh",
-            "email": "michael@okoh.co.uk"
-        }
-    ],
-    "minimum-stability": "dev",
-    "autoload": {
-        "psr-4": {
-            "Ichtrojan\\Otp\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Ichtrojan\\Otp\\OtpServiceProvider"
-            ],
-            "aliases": {
-                "Otp": "Ichtrojan\\Otp\\Otp"
-            }
-        }
-    },
-    "require": {},
-    "description": "A simple package to generate and validate OTPs"
+  "name": "asher/laravel-otp-mongodb",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Raja Muhammad Asher",
+      "email": "raja.muhammad.asher@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "asher\\Otp\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "asher\\Otp\\OtpServiceProvider"
+      ],
+      "aliases": {
+        "Otp": "asher\\Otp\\Otp"
+      }
+    }
+  },
+  "require": {},
+  "description": "A simple package to generate and validate OTPs"
 }
