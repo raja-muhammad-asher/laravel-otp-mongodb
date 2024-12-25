@@ -17,7 +17,7 @@ This is a simple package to generate and validate OTPs (One Time Passwords). Thi
 Install via composer
 
 ```bash
-composer require asher/laravel-otp-mongodb
+composer require raja-muhammad-asher/laravel-otp-mongodb
 ```
 
 Run Migrations
