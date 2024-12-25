@@ -1,6 +1,6 @@
 <?php
 
-namespace asher\Otp\Models;
+namespace Asher\Otp\Models;
 
 use MongoDB\Laravel\Eloquent\Model;
 

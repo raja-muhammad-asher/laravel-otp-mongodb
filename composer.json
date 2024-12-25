@@ -11,13 +11,13 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "asher\\Otp\\": "src/"
+      "Asher\\Otp\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "asher\\Otp\\OtpServiceProvider"
+        "Asher\\Otp\\OtpServiceProvider"
       ],
       "aliases": {
         "Otp": "asher\\Otp\\Otp"

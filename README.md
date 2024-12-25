@@ -36,7 +36,7 @@ php artisan migrate
 ```php
 <?php
 
-use Ichtrojan\Otp\Otp;
+use Asher\Otp\Otp;
 
 (new Otp)->generate(string $identifier, string $type, int $length = 4, int $validity = 10);
 ```
@@ -51,7 +51,7 @@ use Ichtrojan\Otp\Otp;
 ```php
 <?php
 
-use Ichtrojan\Otp\Otp;
+use Asher\Otp\Otp;
 
 (new Otp)->generate('michael@okoh.co.uk', 'numeric', 6, 15);
 ```
@@ -71,7 +71,7 @@ This will generate a six digit OTP that will be valid for 15 minutes and the suc
 ```php
 <?php
 
-use Ichtrojan\Otp\Otp;
+use Asher\Otp\Otp;
 
 (new Otp)->validate(string $identifier, string $token)
 ```
@@ -84,7 +84,7 @@ use Ichtrojan\Otp\Otp;
 ```php
 <?php
 
-use Ichtrojan\Otp\Otp;
+use Asher\Otp\Otp;
 
 (new Otp)->validate('michael@okoh.co.uk', '282581');
 ```
@@ -133,7 +133,7 @@ To verify the validity of an OTP without marking it as used, you can use the `is
 
 ```php
 <?php
-use Ichtrojan\Otp\Otp;
+use Asher\Otp\Otp;
 
 (new Otp)->isValid(string $identifier, string $token);
 ```

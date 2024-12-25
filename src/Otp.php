@@ -1,10 +1,10 @@
 <?php
 
-namespace asher\Otp;
+namespace Asher\Otp;
 
 use Carbon\Carbon;
 use Exception;
-use asher\Otp\Models\Otp as Model;
+use Asher\Otp\Models\Otp as Model;
 
 class Otp
 {

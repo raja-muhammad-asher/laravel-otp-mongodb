@@ -1,8 +1,8 @@
 <?php
 
-namespace asher\Otp\Commands;
+namespace Asher\Otp\Commands;
 
-use asher\Otp\Models\Otp;
+use Asher\Otp\Models\Otp;
 use Illuminate\Console\Command;
 
 class CleanOtps extends Command

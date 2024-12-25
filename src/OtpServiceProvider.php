@@ -1,6 +1,6 @@
 <?php
 
-namespace asher\Otp;
+namespace Asher\Otp;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -23,7 +23,7 @@ class OtpServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
 
         $this->commands([
-            \asher\Otp\Commands\CleanOtps::class,
+            \Asher\Otp\Commands\CleanOtps::class,
         ]);
     }
 }
