@@ -25,5 +25,5 @@
     }
   },
   "require": {},
-  "description": "A simple package to generate and validate OTPs"
+  "description": "A simple package to generate and validate OTPs for mongodb/laravel-mongodb"
 }
